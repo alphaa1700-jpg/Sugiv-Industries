@@ -2564,7 +2564,7 @@
     background: var(--orange);
     top: 50%;
     left: 50%;
-    transform-origin: 50% 0%;
+    transform-origin: 50% 100%;
     transform: translate(-50%, -100%) rotate(0deg);
     transition: transform 0.6s cubic-bezier(0.68, -0.65, 0.265, 1.55);
     border-radius: 2px;
@@ -2617,9 +2617,29 @@
 
   /* Responsive styling */
   @media (max-width: 768px) {
+    nav {
+      padding: 12px 5% !important;
+    }
+    nav.scrolled {
+      padding: 10px 5% !important;
+    }
+    .nav-logo-img {
+      height: 32px !important;
+    }
     .nozzle-theme-toggle {
+      width: 36px !important;
+      height: 36px !important;
       margin-left: auto;
-      margin-right: 15px;
+      margin-right: 12px;
+    }
+    .dial-needle {
+      height: 12px !important;
+    }
+    .mode-icons {
+      padding: 0 4px !important;
+    }
+    .mode-icon {
+      font-size: 9px !important;
     }
   }
 
